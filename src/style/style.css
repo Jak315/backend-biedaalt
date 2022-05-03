@@ -1,0 +1,149 @@
+.porpic {
+  max-width: 200px;
+  border-radius: 50%;
+}
+#my-dropdown {
+  position: relative !important;
+}
+.item {
+  flex: 1 1 150px;
+}
+.line {
+  border-top: 1px solid grey;
+}
+.paragrph :first-child {
+  font-size: 4em;
+  font-weight: 700;
+}
+.paragrph :last-child {
+  color: rgb(56, 55, 55);
+}
+.icons {
+  max-width: 20px;
+}
+
+.link {
+  transform: translateX(-0.75em);
+  transition: transform 200ms;
+  color: rgb(22, 22, 92);
+}
+
+.link::before {
+  content: "#";
+  display: inline-block;
+  width: 0.75em;
+
+  color: #888888;
+
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.link:hover {
+  transform: none;
+}
+
+.link:hover::before {
+  opacity: 1;
+}
+
+.how::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.how:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.how::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgb(0, 204, 255);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.how {
+  position: relative;
+  font-size: 1rem;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+.hows::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.hows:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hows::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgb(157, 255, 29);
+  z-index: -1;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+}
+
+.hows {
+  position: relative;
+  font-size: 1rem;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
